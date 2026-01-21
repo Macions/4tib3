@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kupowanie - Baza Danych</title>
+    <style>
+        body { display: flex; font-family: Arial; }
+        .left { width: 50%; padding: 20px; border-right: 1px solid #ccc; }
+        .right { width: 50%; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 15px; }
+        th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="left">
+    <h2>Tabela: sprzedane</h2>
+    
+
+    <h3>Dodaj nowy wpis:</h3>
+    <form method="post">
+        Autor: <input name="nazwisko" required><br>
+        Tytuł: <input name="tytul" required><br>
+        Liczba sprzedanych: <input name="liczba" type="number" required><br>
+        Kraj: <input name="kraj" required><br>
+        Recenzja: <input name="recenzja" required><br>
+        <button type="submit" name="dodaj">Dodaj</button>
+    </form>
+</div>
+
+<div class="right">
+    <h3>Panel akcji:</h3>
+    <form method="post">
+        <label><input type="radio" name="akcja" value="info" onchange="this.form.submit()"> Pokaż autorów i recenzje</label><br>
+        <label><input type="radio" name="akcja" value="statystyki" onchange="this.form.submit()"> Statystyki sprzedaży</label><br>
+        <label><input type="radio" name="akcja" value="tabelka" onchange="this.form.submit()"> Tabela tytuł-kraj-sprzedaż</label>
+    </form>
+    <hr>
+   
+</div>
+
+</body>
+</html>

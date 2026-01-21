@@ -1,0 +1,48 @@
+1. CREATE TABLE mieszkancy(
+    id int AUTO_INCREMENT,
+    imie varchar(25) not null,
+    nazwisko varchar(30) not null,
+    data_urodzenia date not null,
+    pesel int(9) not null,
+    nazwa_miasta_id int not null,
+    ulica varchar(30) not null,
+    kod_pocztowy varchar(6) not null,
+    pracujący TINYINT not null
+);
+
+ALTER TABLE mieszkancy ADD PRIMARY KEY (id);
+ALTER TABLE mieszkancy MODIFY COLUMN id int auto_increment;
+
+
+2. ALTER TABLE mieszkancy ADD CONSTRAINT fk FOREIGN KEY (nazwa_miasta_id) REFERENCES miasta(id);
+
+
+3. INSERT INTO miasta(nazwa_miasta) VALUES ("Warszawa"), ("Łódź"), ("Poznań")
+
+
+4. INSERT INTO `mieszkancy`(`imie`, `nazwisko`, `data_urodzenia`, `pesel`, `nazwa_miasta_id`, `ulica`, `kod_pocztowy`, `pracujacy`) VALUES 
+('Jan', 'Kowalski', '2025-12-02', 123456789, 1, "Słoneczna","12-456", 1),
+('Kacper', 'Nowak', '2025-11-22', 324375784, 2, "Poziomkowa","23-456", 0),
+('Wojtek', 'Mazak', '2025-03-15', 578292956, 3, "Kwiatowa","45-678", 1);
+
+
+5. Kwrendy:
+SELECT imie FROM mieszkancy WHERE CHAR_LENGTH(imie) > 2;
+SELECT imie as "Imie mieszkańca", nazwisko as "Nazwisko mieszkańca" FROM mieszkancy WHERE pracujacy=0;
+SELECT imie, nazwisko FROM mieszkancy WHERE ulica LIKE 'K%';
+SELECT imie, nazwisko, kod_pocztowy FROM mieszkancy WHERE ulica LIKE '%k';
+SELECT kod_pocztowy FROM mieszkancy WHERE imie = "Adam";
+SELECT * FROM mieszkancy WHERE pracujący = 1;
+SELECT m.imie, m.nazwisko, miasta.nazwa_miasta FROM mieszkancy AS m JOIN miasta;
+SELECT data_urodzenia FROM mieszkancy WHERE imie = "Jan";
+SELECT data_urodzenia FROM mieszkancy WHERE imie = "Wojtek";
+SELECT nazwa_miasta FROM miasta WHERE nazwa_miasta LIKE "Ł%";
+SELECT imie, nazwisko, data_urodzenia FROM mieszkancy WHERE PESEL LIKE "57%";
+SELECT data_urodzenia FROM mieszkancy WHERE ulica = "Kwiatowa";
+SELECT ulica FROM mieszkancy WHERE imie = "Jan";
+SELECT kod_pocztowy FROM mieszkancy WHERE ulica = "Słoneczna";
+SELECT kod_pocztowy FROM mieszkancy WHERE kod_pocztowy LIKE "12-%";
+SELECT nazwisko FROM mieszkancy WHERE imie = "Kacper";
+SELECT mie.imie, mie.nazwisko, mia.nazwa_miasta FROM mieszkancy AS mie, miasta AS mia WHERE ulica = "Poziomkowa"
+
+6. SELECT * FROM mieszkancy, miasta WHERE nazwa_miasta_id = miasta.id JOIN miasta;

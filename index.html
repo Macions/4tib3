@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        // document.write("Program napisany w języku JavaScript <br>");
+
+        // var x = "JavaScript";
+        // var y = "Zmienne";
+
+        // document.write(x+y+"<br>");
+
+        // var y=3.01;
+
+        // document.write(x+y);
+
+        // alert("Treść komunikatu okna informacyjnego");
+        // var xy = confirm("Komunikat coś tam");
+        // prompt("Treść komunikatu");
+
+        // document.write("<br>" + xy);
+        // document.write(prompt("Maciej: ", ""));
+
+
+        // var imie = prompt("Jak masz na imie?: ");
+        // document.write("<br>Ty masz na imie " +imie+ "!");
+
+        // document.write("Klasa 4 TIB liczy" +21+ " osób<br>");
+        // document.write("Wychowawca Grzegorz Słoma");
+        // alert("wiosna");
+
+        // var yDwa = confirm("Czy chcesz zakończyć już zajećia?");
+        // var xDwa = prompt("Podaj swoje imie: ")
+        // document.write("<br>Twoje imie to: <br>" +xDwa)
+
+        // if(y){
+        //     document.write("<br>koniec zajęć");
+        // } else{
+        //     document.write("<br><b><i>to do roboty</i></b>")
+        // }
+
+
+        // Napisz aplikację która zapyta sie ciebie czy skonczyles 18 lat, 
+        // jesli tak to podaj imie, i wyswietlaj alerem mozesz sobie zarobic prawo jazdy, jesli nie skończyłeś to alert kwiat dla cb, i alert miśki wszystkie dal cb
+
+        // var wiekOsiemnascie = confirm("Czy skończyłeś 18 lat?");
+
+        // if(wiekOsiemnascie === true){
+        //     var imie = prompt("Podaj swoje imie: ");
+        //     alert("'{imie}'możesz sobie zrobić prawo jazdy.");
+
+        // } else{
+        //     alert("Kwiat dla ciebie");
+        //     alert("Wszystkie misie dal ciebie");
+        // }
+
+
+        // console.log(typeof "Kwiatkowska");
+        // console.log(typeof 10);
+        // console.log(typeof 5.6);
+        // console.log(typeof true);
+        // console.log(typeof undefined);
+        // console.log(typeof null);
+
+        // if(null===ndefined)
+        // {
+        //     document.write("true");   
+        // }
+        // else 
+        // {
+        //     document.write("false");
+        // }
+        // document.write("<br>Ścisła kontrola typu<br>");
+        // if(null==undefined)
+        // {
+        //     document.write("true");
+        // }
+        // else 
+        // {
+        //     document.write("false");
+        // }
+
+        // document.write("Michał<br>");
+
+        // document.write("Dziuda<br>");
+        // document.write("08.08.2000");
+
+        // var a = "";
+        // var b = 2025;
+        // var c = prompt("Podaj swój rok urodzenia");
+        // var d = parseInt(c);
+
+        // var wiek = b-d;
+
+        // alert("Twój wiek to: " +wiek);
+
+
+        // Zadanie 2
+
+        // var a = 10;
+        // var b = 5;
+
+        // document.write("druga liczba = " +b+"<br>");
+        // document.write("pierwsza liczba = " +a+"<br>");
+        // document.write("Suma = " +(a+b)+"<br>");
+        // document.write("Różnica = " +(a-b)+"<br>");
+        // document.write("Iloczyn = " +(a*b)+"<br>");
+        // document.write("Iloraz = " +(a/b)+"<br>");
+        // document.write("Reszta z dzielenia = " +(a%b)+"<br>");
+
+        // Zadanie 3
+
+        // let x = 7;
+        // let y = 10;
+        // let z;
+
+        // x--;
+        // z = x / 2 + 5;
+
+        // y++;
+        // x = z + x / 3;
+
+        // y += x;
+
+        // document.write("x=" + x + ", y=" + y + ", z=" + z);
+
+        /*var x = 12;
+        var y ;
+        document.write(++x);
+        document.write("<br>");
+        
+        document.write(x++);
+        document.write("<br>");
+        
+        document.write(x);
+        document.write("<br>");
+        
+        y=x++;
+
+        document.write(y);
+        document.write("<br>");
+        
+        y=++x;
+        document.write("<br>" +y);
+        
+        document.write("<br>");
+        
+        var x = 12;
+        var y = 0;
+        document.write(--x);
+        document.write("<br>");
+        
+        document.write(x--);
+        document.write("<br>");
+        
+        document.write(x);
+        document.write("<br>");
+        
+        y=x--;
+
+        document.write(y);
+        document.write("<br>");
+        
+        var str = "abc"+"def";
+        var liczba = 123+456;
+        var zmienna1 = "abc"
+        y=--x;
+        document.write("<br>" +y);
+       */
+        // var a = prompt("wprowadź liczbę");
+        // var b = prompt("wprowadź drugą liczbę");
+        // a = parseInt(a);
+        // b = parseInt(b);
+        // if (a > b) {
+        //     document.write("Liczba ", a, " jest większa");
+        // }
+        // else if (a == b) {
+        //     document.write("Liczby te są takie same");
+        // }
+        // else {
+        //     document.write("Liczba ", b, " jest większa");
+        // }
+
+
+        // var a = prompt("Ile masz lat?");
+        // a = parseInt(a);
+        // if (a >= 18) {
+        //     document.write("Możesz głosować w wyborach <br>");
+        // }
+        // if (a >= 21) {
+        //     document.write("Możesz zostać posłem <br>");
+        // }
+
+        // if (a >= 30) {
+        //     document.write("Możesz być senatorem <br>");
+        // }
+
+        // if (a >= 35) {
+        //     document.write("Możesz zostać prezydentem <br>");
+        // }
+
+        // if (a >= 65) {
+        //     if (confirm("Czy jesteś księdzem") == true) {
+        //         if (a >= 71) {
+        //             document.write("Możesz przejść na emeryturę jako ksiądz");
+        //         }
+        //     }
+        // }
+
+        // KASKADOWE
+        // var a = prompt("Ile masz lat?");
+        // a = parseInt(a);
+        // if (a >= 18) {
+        //     document.write("Możesz głosować w wyborach <br>");
+        // }
+        // else if (a >= 21) {
+        //     document.write("Możesz zostać posłem <br>");
+        // }
+
+        // else if (a >= 30) {
+        //     document.write("Możesz być senatorem <br>");
+        // }
+
+        // else if (a >= 35) {
+        //     document.write("Możesz zostać prezydentem <br>");
+        // }
+
+        // else if (a >= 65) {
+        //     if (confirm("Czy jesteś księdzem") == true) {
+        //         if (a >= 71) {
+        //             document.write("Możesz przejść na emeryturę jako ksiądz");
+        //         }
+        //     }
+        // } else{
+        //     document.write("Miłego dnia");
+        // }
+
+        // var kolor = prompt("Jaki kolor wybierasz (Czarny , Biały lub Niebieski)");
+        // switch(kolor) {
+        //     case "czarny":
+        //     document.write("Wybrany kolor: Czarny <br>");
+        //     break;
+        //     case "biały":
+        //     document.write("Wybrany kolor: biały <br>");
+        //     break;
+        //     case "niebieski":
+        //     document.write("Wybrany kolor: niebieski <br>");
+        //     break;
+        //     default:
+        //         document.write("Abcdef");
+        // }
+
+        // przy użyciu instrukcji kaskadowej, zapyta sie czy dziecko było grzeczne, jeśli tak to dajemy mu 3 nagrody. 1: godzina na strzelny, 2: wycieczka do aquaparku, 3: pójście do kina; 
+
+        // let odp = confirm("Czy byłeś grzeczny/grzeczna?");
+
+        // if (odp) {
+        //     let opcja = prompt("Wybierz nagrodę (1,2,3): ")
+        //     opcja = parseInt(opcja);
+
+        //     switch (opcja) {
+        //         case 1:
+        //             document.write("Wygrałeś/wygrałaś godzinę na strzelnicy!");
+        //             break;
+        //         case 2:
+        //             document.write("Wygrałeś/wygrałaś wycieczkę do aquaparku!");
+        //             break;
+        //         case 3:
+        //             document.write("Wygrałeś/wygrałaś pójście do kina!");
+        //             break;
+        //         default:
+        //             document.write("Wybierz opcję 1, 2 lub 3!!!");
+        //             break;
+        //     }
+        // } else {
+        //     let opcja = prompt("Wybierz karę (1,2,3): ")
+        //     opcja = parseInt(opcja);
+
+        //     switch (opcja) {
+        //         case 1:
+        //             document.write("Twoją karą jest 20 pompek!");
+        //             break;
+        //         case 2:
+        //             document.write("Twoją karą jest czytanie lektury!");
+        //             break;
+        //         case 3:
+        //             document.write("Twoją karą jest bieg na 10km!");
+        //             break;
+        //         default:
+        //             document.write("Wybierz opcję 1, 2 lub 3!!!");
+        //             break;
+        //     }
+        // }
+
+
+        // if (odp) {
+        //     let opcja = prompt("Wybierz nagrodę (1,2,3): ")
+        //     opcja = parseInt(opcja);
+
+        //     if (opcja == 1) {
+        //         document.write("Wygrałeś/wygrałaś godzinę na strzelnicy!");
+
+        //     } else if (opcja == 2) {
+
+        //         document.write("Wygrałeś/wygrałaś wycieczkę do aquaparku!");
+        //     }
+        //     else if (opcja == 3) {
+
+        //         document.write("Wygrałeś/wygrałaś pójście do kina!");
+        //     } else {
+
+        //         document.write("Wybierz opcję 1, 2 lub 3!!!");
+        //     }
+        // }
+        // else {
+        //     let opcja = prompt("Wybierz karę (1,2,3): ")
+        //     opcja = parseInt(opcja);
+
+        //     if (opcja == 1) {
+        //         document.write("Twoją karą jest 20 pompek!");
+        //     } else if (opcja == 2) {
+        //         document.write("Twoją karą jest czytanie lektury!");
+        //     }
+        //     else if (opcja == 3) {
+        //         document.write("Twoją karą jest bieg na 10km!");
+        //     } else {
+        //         document.write("Wybierz opcję 1, 2 lub 3!!!");
+        //     }
+        // }
+
+        // var ocena = prompt("Wproawdź ocenę z klasówki: ");
+        // ocena = parseInt(ocena);
+
+        // if (ocena == 6) {
+        //     document.write("Świetnie!!!")
+        // } else if (ocena == 5) {
+        //     document.write("Super!!!");
+        // } else if (ocena == 4) {
+        //     document.write("Dobrze!");
+        // } else if (ocena == 3) {
+        //     document.write("Może być.");
+        // } else if (ocena == 2) {
+        //     document.write("Nie za dobrze.");
+        // } else if (ocena == 1) {
+        //     document.write("Tragedia!");
+        // } else{
+        //     document.write("Wprowadź poprawną ocenę!");
+
+        // }
+
+        // switch (ocena) {
+        //     case 6:
+        //         document.write("Świetnie!!!");
+        //         break;
+        //     case 5:
+        //         document.write("Super!!!");
+        //         break;
+        //     case 4:
+        //         document.write("Dobrze!");
+        //         break;
+        //     case 3:
+        //         document.write("Może być.");
+        //         break;
+        //     case 2:
+        //         document.write("Nie za dobrze.");
+        //         break;
+        //     case 2:
+        //         document.write("Tragedia!");
+        //         break;
+        //     default:
+        //         document.write("Wprowadź poprawną ocenę!");
+
+        // }
+
+
+        // const nr = prompt("Podaj liczbę z zakresu 1-10");
+        // if(nr > 5){
+
+        // }
+        // const nrr = Number(prompt("Podaj liczbę z zakresu 1-10"));
+        // if(nr > 5){
+
+        // }
+
+        // const nrrr = prompt("Podaj liczbę 10");
+        // if(nr == 10){
+        //     console.log(nr+nr);
+        // }
+        // const nrR = Number(prompt("Podaj liczbę 10"));
+        // if(nr === 10){
+        //     console.log(nr+nr);
+        // }
+
+
+        // let x = prompt("Podaj liczbę: ");
+
+        // let y = (x%2==0)?"parzysta":"nieparzysta";
+
+        // document.write("<b>x</b> to liczba "+y);
+
+        // let x = prompt("Podaj wzrost: ");
+        // x = parseFloat(x);
+
+        // if(x < 150){
+        //     document.write("Jesteś niski");
+        // } else if(x > 150 && x < 180){
+        //     document.write("Jesteś średniego wzrostu");
+        // } else{
+        //     document.write("Jesteś wysoki");
+        // }
+
+        // let odp = (x<150)?"niski":(x>150 && x<180)?"średni":"wysoki";
+
+
+
+        // const nr = 5;
+
+        // switch (true) {
+        //     case (nr <= 5):
+        //         console.log("Mało");
+        //         break;
+        //     case (nr > 5 && nr < 10):
+        //         console.log("Średnio");
+        //         break;
+        //     case (nr >= 10):
+        //         console.log("Dużo");
+        //         break;
+        // }
+
+
+        // let x = prompt("Podaj liczbę");
+        // x=parseInt(x);
+
+        // let y = (x>10)?"Większa od dziesięć":"Mniejsza od dziesięć";
+
+
+        // document.write(y);
+
+        // Przy użyciu operatora warunkowego, określ czy jak bardzi gruba jest Ala, 
+        // ala poda ile waży a program odpowie, do 30 kg -  anoreksja, miedzy 30 a 50 szczupłośc, 
+        // między 50 -70 lekka nadwaga, od 70 nadwaga
+
+
+        // let x = prompt("Podaj wage");
+
+        // x = parseInt(x);
+
+        // let y = (x<30)?"Anoreksja": (x>30 && x< 50)?"Szczupła":(x>50 && x < 70)?"Lekka nadwaga":"Nadwaga";
+
+        // document.write(y);
+
+        //Przy użyciu instrukcji switch, użytkownik pisze kolor, jeśli 1 to czerwony i napis "Jesień", 
+        // jeśli 2 to żółty, późna jesien
+        // 3 to zielony, lato
+        // 4 to brązowy, wczesne lato
+        // 5 jasnoniebieski - późna wiosna
+        // 6 niebieski - wczesna zima
+
+        // let x = prompt("Wybierz kolor (1 - czerwony, 2 - żółty, 3 - zielony, 4 - brązowy, 5 - biały, 6 - niebieski)");
+        // x = parseInt(x);
+        // switch (x) {
+        //     case 1:
+        //         document.write("<span style='color: red'>Jesień</span>");
+        //         break;
+        //     case 2:
+        //         document.write("<span style='color: yellow'>Późna jesień</span>");
+        //         break;
+        //     case 3:
+        //         document.write("<span style='color: green'>Lato</span>");
+        //         break;
+        //     case 4:
+        //         document.write("<span style='color: brown'>Wczesne lato</span>");
+        //         break;
+        //     case 5:
+        //         document.write("<span style='color: lightblue'>Późna wiosna</span>");
+        //         break;
+        //     case 6:
+        //         document.write("<span style='color: żółty'>Wczesna zima</span>");
+        //         break;
+        //     default:
+        //         document.write("NIEPOPRAWNA OPCJA!");
+        //         document.body.style.backgroundColor = "red";
+        // }  
+
+
+        // var im = prompt("Podaj imie");
+        // for (i = 1; i <= 10; i++) {
+        //     document.write(im + " po raz " + i + "<br>");
+        // }
+
+        // var a = prompt("Podaj imie: ");
+        // var b = 0;
+
+        // do {
+        //     document.write(a + " po raz " + b + "<br>");
+        // } while (b < 10);
+
+        // var a = prompt("Podaj imie");
+        // var b = 1;
+        // while (b <= 10) {
+        //     document.write(a + " po raz " + a + "<br>");
+        // }
+
+
+        // let a = prompt("Wpisz liczbę: ");
+        // a = parseInt(a);
+
+        // for (let i = 1; i <= a; i++) {
+        //     document.write(i + "<br>");
+        // }
+
+
+        // suma = 0;
+
+        // for (let i = a; suma <= 110; i += a) {
+        //     let a = prompt("Podaj liczbę: ");
+        //     a = parseInt(a);
+        //     suma += a;
+        //     console.log(i);
+        // }
+        // document.write("Suma wynosi " + suma + "<br>");
+
+
+
+        // while (suma <= 110) {
+        //     var b = prompt("podaj liczbe ");
+        //     b = parseInt(b);
+
+        //     suma += b;
+        // }
+
+        // document.write("Suma wynosi " + suma + "<br>");
+
+
+
+
+        // do {
+        //     var b = prompt("podaj liczbe ");
+        //     b = parseInt(b);
+
+        //     suma += b;
+        // } while (suma <= 110);
+
+        // document.write("Suma wynosi " + suma + "<br>");
+
+
+        // for (let i = 0; i < 4; i++) {
+        //     for (let j = 0; j < 4 - i; j++) {
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+
+
+        // for (let i = 5; i <= 8; i++) {
+        //     for (let j = i; j > (i-5); j--) {
+        //         document.write(j + ",");
+        //     }
+        //     document.write("<br>")
+        // }
+
+
+
+        // let x = 0
+        // while (x < 14) {
+        //     document.write("jak dobrze zostac w domu <br>");
+        //     x++;
+        // }
+
+
+
+        // do {
+        //     x++;
+        //     document.write("jak dobrze zostac w domu <br>");
+        // }
+        // while (x < 14);
+
+
+
+        // for (let i = 1; i <= 14; i++) {
+
+        //     document.write("jak dobrze zostac w domu <br>");
+        // }
+
+
+        // let ilosc = 0;
+
+        // for (let i = 0; i <= 1; i++) {
+        //     for (let j = 0; j <= 5; j++) {
+        //         if (ilosc <= 5) {
+        //             document.write("<span style='color: white;'>*</span>");
+        //             ilosc += 1;
+        //         } else{
+        //             document.write("<span style='color: red;'>*</span>");
+        //         }
+        //     }
+        //     document.write("<br>")
+        // }
+
+
+        // let a = prompt("Podaj dlugosc a: ");
+        // let b = prompt("Podaj dlugosc b: ");
+
+        // a = parseInt(a);
+        // b = parseInt(b);
+
+        // for (let i = 1; i <= a; i++) {
+        //     for (let j = 1; j <= b; j++){
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+
+
+        // let a = prompt("Podaj dlugosc a (nieparzyste): ");
+        // let b = prompt("Podaj dlugosc b (nieparzyste): ");
+
+        // a = parseInt(a);
+        // b = parseInt(b);
+
+        // if (a % 2 != 0 && b % 2 != 0) {
+        //     for (let i = 0; i < a; i++) {
+        //         if (i == 0 || i == b) {
+        //             for (let j = 0; j < b; j++) {
+        //                 document.write("*");
+        //             }
+        //             document.write("<br>");
+        //         } else {
+        //             for (let k = 0; k < a; k++) {
+        //                 if (k == 0 || k == a) {
+        //                     document.write("*");
+        //                 } else{
+        //                     document.write(" ");
+        //                 }
+        //             }
+        //         }
+
+        //     }
+
+        // }
+
+
+        // Przy pomocy trzech pętli dodaj do siebie od 1 do 100 i wyświetlić wynik
+
+        // let suma = 0;
+        // for (let x = 1; x <= 100; x++) {
+        //     suma += x;
+        // }
+
+        // let x = 0;
+        // while (x < 100) {
+        //     x++;
+        //     suma += x;
+        // }
+
+        // do {
+        //     x++;
+        //     suma += x;
+
+        // }
+        // while (x < 100);
+
+        // document.write(suma);
+
+
+
+        // const a = 10;
+        // const b = 20;
+
+        // for (let i = 1; i <= a && i <= b; i++){
+        //     console.log("Wypisze się tyle co ma maniejsza liczba ", i);
+        // }
+
+        // const a = 10;
+        // const b = 20;
+
+        // for (let i = 1; i >= a && i <= b; i++){
+        //     console.log("Wypisze się tyle co ma maniejsza liczba ", i);
+        // }
+
+        // for(;;){
+        //     document.write("a");
+        // }
+
+        // while(true){
+        //     document.write("a");
+        // }
+
+        // let i = 0;
+
+        // while(i < 0.5){
+        //     console.log(i);
+        //     i = Math.random();
+        // }
+
+        // console.log(i);
+
+        // for(let i = 0; i<10;i++){
+        //     console.log(`%c Główna pętla nr: ${i} "color:red:`);
+
+        //     for(let j = 0; j<6;j++){
+        //         // console.log
+        //     }
+        // }
+
+
+        // for (let i = 0; i < 10; i++){
+        //     for(let i = 0; i<6; i++){
+        //         console.log(`Pętla zagnieżdżona: ${i}`);
+        //     }
+        // }
+
+        // let str = '';
+        // let i = 0;
+
+        // while(i <= 100){
+        //     str +=i;
+        //     if(str.length > 20) break;
+        //     i++;
+        // }
+
+        // console.log(str);
+
+        // const tab = ['Ala', 'Monika', 'Beata', 'Karol'];
+        // let userExist = false;
+
+        // for (let i = 0; i < tab.length; i++){
+        //     if(tab[i] === "Beata"){
+        //         userExist = true;
+        //         break;
+        //     }
+        // }
+
+        // if(userExist){
+        //     console.log("Istnieje");
+        // }
+
+
+        // const tab = ['Ala', 'Monika', 'Beata', 'Karol', 'Alicja'];
+
+        // for (let i = 0; i < tab.length; i++){
+        //     if(tab[i] === "Karol"){
+        //         continue;
+        //     }
+        //     console.log(tab[i]);
+        // }
+
+
+        // let i = 1, a;
+        // document.write("<h1>Wylosowano liczby</h1>");
+        // document.write("<table> <tr>");
+        // while (i <= 10) {
+        //     a = parseInt(Math.random() * 100 + 1);
+        //     document.write(`<td>${a}</td>`)
+        //     i++;
+        // }
+
+        // document.write("</tr></table>");
+
+        // function Witaj(imie){
+        //     document.write(`Witaj ${imie}`);
+        // }
+
+        // let x = prompt("Podaj imie: ");
+        // Witaj(x);
+
+        // function Suma(a, b) {
+        //     return a + b;
+        // }
+
+        // var a = 10, b = 11, S = Suma(a, b), P = Suma(b, a);
+
+        // document.write(`Wynik sumy to ${Suma(a,b)}`); 
+
+
+        // function DrukujLiczby(a, b) {
+        //     for (var n = a; n <= b; ++n) {
+        //         if (n > 100) {
+        //             return;
+        //         }
+        //         document.write(`${n}<br>`);
+        //     }
+        // }
+
+        // var a = 1, b = 120;
+
+        // if (a > b) {
+        //     DrukujLiczby(b, a);
+        // } else {
+        //     DrukujLiczby(a, b);
+        // }
+
+
+        // function parz(a) {
+        //     if ((a % 2 == 0) && (a > 50)) {
+        //         document.write("Liczba parzysta i większa od 50");
+        //         return;
+        //     } else if ((a % 2 != 0) && (a > 50)) {
+        //         document.write("Liczba nieparzysta i większa od 50");
+        //     } else if ((a % 2 == 0) && (a < 50)) {
+        //         document.write("Liczba parzysta i mniejsza od 50");
+        //     } else if ((a % 2 != 0) && (a < 50)) {
+        //         document.write("Liczba nieparzysta i mniejsza od 50");
+        //     }
+
+
+        // }
+        // var a = prompt("Wprowadź liczbę: ")
+        // a = parseInt(a);
+        // parz(a);
+
+        // function iloczyn(a,b){
+        //     var x = prompt(`Podaj wynik: ${a} * ${b},`)
+        //     if(x==a*b){
+        //         document.write("Brawo! Wynik poprawny.")
+        //     } else{
+        //         document.write(`Błąd! ${a} * ${b} = ${a*b}`)
+        //     }
+        // }
+
+        // let x = prompt("Podaj pierwszą liczbę:")
+        // let y = prompt("Podaj drugą liczbę:")
+
+        // iloczyn(x,y);
+
+
+        // function Silnia(x){
+        //     let s=1;
+        //     for(let i = 1; i<=x; i++){
+        //         s*=i;
+        //     }
+        //     return s;
+        // }
+
+        // let liczba = prompt("Podaj liczbę: ");
+        // liczba = parseInt(liczba);
+        // document.write(Silnia(liczba));
+
+        function suma() {
+            let suma = 0;
+            for (let i = 0; i < arguments.length; i++) {
+                suma += arguments[i];
+            }
+            let ilosc = arguments.length;
+            let srednia_liczb = suma/ilosc;
+            srednia(srednia_liczb);
+        }
+        function srednia(srednia_liczb) {
+            document.write(`Średnia podanych przez ciebie liczb to: ${srednia_liczb}`);
+        }
+
+        suma(2,3,3,6)
+    </script>
+
+
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+</body>
+
+</html>

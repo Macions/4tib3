@@ -1,0 +1,41 @@
+CREATE TABLE typ_szkoly (
+  id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  nazwa VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE absolwent (
+  absolwent_id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  typ_szkoly_id INT(11) NOT NULL,
+  FOREIGN KEY (typ_szkoly_id) REFERENCES typ_szkoly(id)
+);
+
+CREATE TABLE adresy (
+  id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  miejscowosc VARCHAR(30) NOT NULL,
+  numer_domu VARCHAR(5) NOT NULL,
+  kod_pocztowy VARCHAR(6),
+  gmina VARCHAR(30)
+);
+
+CREATE TABLE najlepszy_aktor (
+  id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  imie VARCHAR(30) NOT NULL,
+  nazwisko VARCHAR(30) NOT NULL,
+  kraj_pochodzenia VARCHAR(20),
+  wiek INT(11)
+);
+
+CREATE TABLE osoby (
+  id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  imie VARCHAR(15) NOT NULL,
+  nazwisko VARCHAR(20) NOT NULL,
+  pesel VARCHAR(11) NOT NULL,
+  adres_id INT(11) NOT NULL,
+  data_urodzenia TIMESTAMP NOT NULL,
+  tv_time INT(11) NOT NULL,
+  ulubiony_aktor_id INT(11) NOT NULL,
+  place DOUBLE DEFAULT 0,
+  stanowisko_pracy VARCHAR(50),
+  FOREIGN KEY (adres_id) REFERENCES adresy(id),
+  FOREIGN KEY (ulubiony_aktor_id) REFERENCES najlepszy_aktor(id)
+);
