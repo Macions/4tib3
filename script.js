@@ -585,8 +585,8 @@
 //     document.write(`Wartość: ${window[properties[i]]} <br>`)
 // }
 
-const dog = {
-    name: "Szarik",
-    speed: 1000,
+// const dog = {
+//     name: "Szarik",
+//     speed: 1000,
     
-}
+// }
