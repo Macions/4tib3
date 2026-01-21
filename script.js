@@ -590,3 +590,36 @@
 //     speed: 1000,
     
 // }
+
+// const dog ={
+//     name: "Szarik",
+//     speed: 1000,
+//     showText(){
+//         return "Lubię walczyć ze złem";
+//     }
+// }
+
+// document.write(`${dog.name} <br>`);
+// document.write(`${dog.speed} <br>`);
+// document.write(dog.showText());
+
+const tab = [];
+const name = "Szama";
+
+const speed = 1000;
+const ob = {
+    name: name,
+    speed: speed
+}
+tab.push(ob);
+document.writeln(`${ob.name} ${ob.speed} <br>`);
+
+document.writeln(`<br> INACZEJ <br>`);
+tab.push({name: name, speed: speed});
+
+document.writeln(`${ob.name} ${ob.speed}`);
+
+document.writeln(`<br> INACZEJ <br>`);
+
+tab.push({name, speed});
+document.writeln(`${ob.name} ${ob.speed}`);
