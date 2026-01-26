@@ -603,27 +603,42 @@
 // document.write(`${dog.speed} <br>`);
 // document.write(dog.showText());
 
-const tab = [];
-const name = "Szama";
+// const tab = [];
+// const name = "Szama";
 
-const speed = 1000;
-const ob = {
-    name: name,
-    speed: speed
+// const speed = 1000;
+// const ob = {
+//     name: name,
+//     speed: speed
+// }
+// tab.push(ob);
+// document.querySelector(".jeden").innerHTML = `${ob.name} ${ob.speed} <br>`;
+
+// document.querySelector(".dwa").innerHTML = `<br> INACZEJ <br>`;
+// tab.push({name: name, speed: speed});
+
+// document.querySelector(".trzy").innerHTML = `${ob.name} ${ob.speed}`;
+
+// document.querySelector(".cztery").innerHTML = `<br> INACZEJ <br>`;
+
+// tab.push({name, speed});
+// document.querySelector(".pięć").innerHTML = `${ob.name} ${ob.speed}`;
+
+const dog ={
+    name: "Szarik",
+    speed: 1000,
+    showText(){
+        return "Lubię walczyć ze złem";
+    }
 }
-tab.push(ob);
-document.writeln(`${ob.name} ${ob.speed} <br>`);
 
-document.writeln(`<br> INACZEJ <br>`);
-tab.push({name: name, speed: speed});
+document.write(`${dog.name} <br>`);
+document.write(`${dog.speed} <br>`);
+document.write(dog.showText());
 
-document.writeln(`${ob.name} ${ob.speed}`);
+dog["name"];
+dog["speed"];
+dog["showText"]();
 
-document.writeln(`<br> INACZEJ <br>`);
-
-tab.push({name, speed});
-document.writeln(`${ob.name} ${ob.speed}`);
-
-
-
-
+document.write(`${dog["name"]} <br>`);
+document.write(`${dog["speed"]} ${dog["showText"]()} <br>`)
