@@ -624,21 +624,28 @@
 // tab.push({name, speed});
 // document.querySelector(".pięć").innerHTML = `${ob.name} ${ob.speed}`;
 
-const dog ={
-    name: "Szama",
-    speed: 1000,
-    showText(){
-        return "walczy ze złem";
-    }
+// const dog ={
+//     name: "Szama",
+//     speed: 1000,
+//     showText(){
+//         return "walczy ze złem";
+//     }
+// }
+
+// dog.name;
+// dog.speed;
+// dog.showText();
+
+// dog["name"];
+// dog["speed"];
+// dog["showText"]();
+
+// document.write(dog["name"] + " <br>");
+// document.write(dog["speed"] + " " + dog["showText"]() + " <br>")
+
+const calendar = {
+    "2025-11-11":"Narodowe Święto Niepodległości"
 }
 
-dog.name;
-dog.speed;
-dog.showText();
-
-dog["name"];
-dog["speed"];
-dog["showText"]();
-
-document.write(dog["name"] + " <br>");
-document.write(dog["speed"] + " " + dog["showText"]() + " <br>")
+calendar["2025-11-11"];
+document.writeln(calendar["2025-11-11"]);
