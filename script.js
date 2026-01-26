@@ -612,14 +612,18 @@ const ob = {
     speed: speed
 }
 tab.push(ob);
-document.querySelector(".jeden").innerHTML = `${ob.name} ${ob.speed} <br>`;
+document.writeln(`${ob.name} ${ob.speed} <br>`);
 
-document.querySelector(".dwa").innerHTML = `<br> INACZEJ <br>`;
+document.writeln(`<br> INACZEJ <br>`);
 tab.push({name: name, speed: speed});
 
-document.querySelector(".trzy").innerHTML = `${ob.name} ${ob.speed}`;
+document.writeln(`${ob.name} ${ob.speed}`);
 
-document.querySelector(".cztery").innerHTML = `<br> INACZEJ <br>`;
+document.writeln(`<br> INACZEJ <br>`);
 
 tab.push({name, speed});
-document.querySelector(".pięć").innerHTML = `${ob.name} ${ob.speed}`;
+document.writeln(`${ob.name} ${ob.speed}`);
+
+
+
+
