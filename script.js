@@ -602,4 +602,4 @@ dog["speed"];
 dog["showText"]();
 
 document.write("<br>" + dog["name"]);
-document.write("<br>" + dog["speed"] + " " + dog["showText"]() + " <br>");
+document.write("<br>" + dog["speed"] + " " + dog["showText"]() + "<br>");
