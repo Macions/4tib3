@@ -2,7 +2,9 @@
 // Zdefiniuj prostą tablicę ktora bedzie maiala liczby 2,15,18,21,123,65,56
 // wyświetl talice za pomocą document write
 
+
 // let tablica  =  [2,15,18,21,123,65,56];
+
 
 // for(let i  =  0; i<tablica.length; i++){
 //   document.write(`${tablica[i]}  <br> `)
@@ -13,17 +15,21 @@
 // document.write(" <br> ");
 // document.write(`Ilosc elementów: ${tablica.length}`)
 
+
 // let tablica  =  [2, 15, 18, 21, 123, 65, 56];
 
 // document.write(tablica);
 
 // document.getElementById("tekstCostam").innerHTML  =  tablica
 
+
 // let tablica  =  [2, 15, 18, 21, 123, 65, 56];
 // let wynik  =  "";
 
 // wynik  =  tablica.join("; ");
 // document.getElementById("tekstCostam").innerHTML  =  wynik;
+
+
 
 // let tablica  =  [2, 15, 18, 21, 123, 65, 56];
 // tablica.push(32434324342,321321)
@@ -35,6 +41,8 @@
 // console.log(tab);
 // tab.unshift("Piotrek", "Paweł");
 // console.log(tab);
+
+
 
 // const tab  =  ["Marcin", "Ania", "Agnieszka"];
 // const first  =  tab.shift();
@@ -51,6 +59,7 @@
 // console.log(typeof tab);
 // console.log(typeof ob);
 
+
 // zadeklaru tablicę pustą pt. zakupy wprowadzić do tej tablicy jeden element przy użyciu stosownej metody wyswietlic tablice
 // mleko, chleb i masło
 // wyswietlić na stronie przy użyciu DOMu
@@ -61,9 +70,10 @@
 
 // document.getElementById("wyswietl").innerHTML  =  tablica;
 
+
 // Sewórz tablice jablko pomarancza banan
 // przez push dodac dwie wartości
-// Przez getelement wyswietlić zawartosc tablicy
+// Przez getelement wyswietlić zawartosc tablicy 
 
 // let tablica  =  ["jabłko", "pomarańcza", "banan"];
 // tablica.push("śliwka");
@@ -71,10 +81,12 @@
 
 // document.getElementById('wyswietl').innerHTML  =  `Zdrowe owoce to: ${tablica}`
 
+
 // zadeklaruj tablice prostą 8,18,28,88,654,375,6666
 // wyswietl tablice
 // dodaj na początku dwie liczby 7, 77
 // wypisz długość ablicy i bieżącą zawartość
+
 
 // let tablica  =  [8, 18, 28, 88, 654, 375, 6666];
 // document.getElementById("pierwsze").innerHTML  =  tablica.join("<img src  =  'pudzian-muscles.gif'>");
@@ -97,23 +109,25 @@
 //   document.bgColor  =  kolorwartosc;
 // });
 
-// tzablica 10 argumenytów, pobrac wezel, dolozyc z tylu 2 liczby,
+
+// tzablica 10 argumenytów, pobrac wezel, dolozyc z tylu 2 liczby, 
 // wysiwetlic liczbe elementow stawic inner html na stronę tablicu i infgormacje o eilosci elementów
 
 // let tablica  =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // tablica.push(11,12);
 
-// document.getElementById("zawart_i_dl").innerHTML  =  `Tablica: ${tablica}, długość ${tablica.length}`
+// document.getElementById("zawart_i_dl").innerHTML  =  `Tablica: ${tablica}, długość ${tablica.length}` 
 
 // 15
 // let tablica  =  [1,2,3,4,5]
-// document.getElementById("zawart_i_dl").innerHTML  =  tablica;
+// document.getElementById("zawart_i_dl").innerHTML  =  tablica; 
 
 // document.writeln(tablica.splice(0,2));
 // document.write(' <br> ');
 
 // document.writeln(tablica);
+
 
 // // 16
 
@@ -151,6 +165,8 @@
 // console.log(`Usunięcie ostatniego: ${tablica}`);
 // document.querySelector(".usun_ost").innerHTML  =  `Tablica po usunięciu ostatniego: <span>${tablica}</span>`;
 
+
+
 // let tablica  =  [];
 // for (let i  =  0; i < 6; i++) {
 //   tablica[i]  =  parseInt(Math.random() * 100);
@@ -167,6 +183,7 @@
 // //   suma + =  tablica[i];
 // // }
 
+
 // let min  =  tablica[0];
 // let max  =  tablica[0];
 // for (let i  =  1; i < tablica.length; i++) {
@@ -179,6 +196,7 @@
 //   }
 // }
 
+
 // tablica.forEach(function (elem_tablicy) {
 //   suma + =  elem_tablicy;
 // })
@@ -187,8 +205,10 @@
 // document.querySelector(".min").innerHTML  =  "Najmniejsza liczba to: " + min;
 // document.querySelector(".max").innerHTML  =  "Największa liczba to: " + max;
 
+
 // let tablica  =  [40,100,1,5,25,10];
 // tablica.sort(function(a,b){return a-b});
+
 
 // let tab  =  [15,20,2,6,125,40];
 // tab.push(3);
@@ -225,13 +245,14 @@
 //     suma+ =  tab[i];
 //     if(tab[i] < min){
 //         min  =  tab[i];
-//     }
+//     } 
 //     if(tab[i] > max){
 //         max  =  tab[i];
 //     }
 // }
 
 // console.log(`Suma to ${suma}. Max to ${max}. Min to ${min}`);
+
 
 // tab.sort(function(a,b){return a-b;});
 
@@ -258,6 +279,7 @@
 // document.write(`sqrt1_2 = ${Math.SQRT1_2} <br> `);
 // document.write(`sqrt2 = ${Math.SQRT2} <br> `);
 
+
 // document.write("pow(2,8)=" + Math.pow(2, 8));
 // document.write("<br> pow(9,-2)=" + Math.pow(9, -2));
 // document.write("<br> pow(2.4,3.2)=" + Math.pow(2.4, 3.2));
@@ -268,6 +290,8 @@
 // document.write("<br>sqrt(-2)=" + Math.sqrt(-2));
 // document.write("<br>pow(sqrt(2),2)=" + Math.pow(Math.sqrt(2), 2));
 // document.write("<br>pow(sqrt(4),2)=" + Math.pow(Math.sqrt(4), 2));
+
+
 
 // document.write(`pow(2, 8) = ${Math.pow(2, 8)}`);
 // document.write(`<br> abs(-9) = ${Math.abs(-9)}`);
@@ -280,7 +304,9 @@
 // document.write(`<br> sqrt(4) = ${Math.sqrt(4)}`);
 // document.write(`<br> pow(sqrt(4), 2) = ${Math.pow(Math.sqrt(4), 2)}`);
 
+
 // document.write(Math.floor((Math.random() * 500) + 10));
+
 
 // let wylosowana = Math.floor(Math.random() * 1000);
 
@@ -317,6 +343,7 @@
 //     obrazek.src = "pudzian-muscles.gif";
 // })
 
+
 // let tekst = prompt("Podaj imię i nazwisko: ");
 
 // let peki = document.querySelectorAll(".a");
@@ -324,6 +351,9 @@
 // peki.forEach((pek, i) => {
 //     pek.innerHTML = tekst + (i+1);
 // });
+
+
+
 
 // // let tekst = prompt("Podaj imię i nazwisko: ");
 // let a1 = document.querySelector(".a1");
@@ -354,6 +384,8 @@
 
 // let data_czas = new Date();
 
+
+
 // setInterval(() => {
 //     let data_czas = new Date();
 //     document.querySelector(".data_czas").innerHTML = data_czas.toLocaleDateString();
@@ -365,6 +397,8 @@
 //     document.querySelector(".sekunda").innerHTML = data_czas.getSeconds();
 // }, 1000)
 
+
+
 // zrobic przyklad na wyswietlanie przez: document write, DOM, console log
 
 // document.write("1234");
@@ -373,6 +407,7 @@
 // let d = document.getElementById("d");
 // document.getElementById("d").innerHTML += "<span>Przez getElementById:</span> Czarnecki";
 // document.querySelector(".aa").innerHTML = "<span>Przez querySelector:</span> Pozdrawiam";
+
 
 // function osoba(imie, nazwisko, rokUrodzenia) {
 //     this.imie = imie;
@@ -460,6 +495,7 @@
 // samochod1.wyswietl();
 // samochod2.wyswietl();
 
+
 // function osoba(imie, nazwisko, adres) {
 //     this.imie = imie;
 //     this.nazwisko = nazwisko;
@@ -493,7 +529,9 @@
 //     document.querySelector(".nazwisko").value = osoby[wpisaneIdWartosc].nazwisko;
 //     document.querySelector(".adres").value = osoby[wpisaneIdWartosc].adres;
 
+
 // })
+
 
 // function sayNameForALL(label) {
 //     document.write(`${label}: ${this.name} <br>`);
@@ -511,6 +549,7 @@
 // sayNameForALL.call(this, ["globalny"]);
 // sayNameForALL.call(person1, ["person1"]);
 // sayNameForALL.call(person2, ["person2"]);
+
 
 // function sayNameForALL(label) {
 //     document.write(`${label}: ${this.name} <br>`);
@@ -549,7 +588,7 @@
 // const dog = {
 //     name: "Szarik",
 //     speed: 1000,
-
+    
 // }
 
 // const dog ={
@@ -585,21 +624,21 @@
 // tab.push({name, speed});
 // document.querySelector(".pięć").innerHTML = `${ob.name} ${ob.speed}`;
 
-const dog = {
-	name: "Szarik",
-	speed: 1000,
-	showText() {
-		return "Lubię walczyć ze złem";
-	},
-};
+const dog ={
+    name: "Szama",
+    speed: 1000,
+    showText(){
+        return "walczy ze złem";
+    }
+}
 
-document.write(`${dog.name} <br>`);
-document.write(`${dog.speed} <br>`);
-document.write(dog.showText());
+dog.name;
+dog.speed;
+dog.showText();
 
 dog["name"];
 dog["speed"];
 dog["showText"]();
 
-document.write("<br>" + dog["name"]);
-document.write("<br>" + dog["speed"] + " " + dog["showText"]() + "<br>");
+document.write(`${dog["name"]} <br>`);
+document.write(`${dog["speed"]} ${dog["showText"]()} <br>`)
