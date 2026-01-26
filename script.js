@@ -640,5 +640,5 @@ dog["name"];
 dog["speed"];
 dog["showText"]();
 
-document.write(`${dog["name"]} <br>`);
-document.write(`${dog["speed"]} ${dog["showText"]()} <br>`)
+document.write(dog["name"] + " <br>");
+document.write(dog["speed"] + " " + dog["showText"]() + " <br>")
