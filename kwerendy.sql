@@ -54,3 +54,15 @@ SELECT * FROM osoba WHERE plec = 'K' AND placa > 4000;
 SELECT * FROM osoba WHERE plec = 'M' AND placa < 5000;
 SELECT DISTINCT rok_biezacy FROM osoba;
 SELECT * FROM osoba LIMIT 3;
+
+Bugaj:
+SELECT imie, placa FROM osoba;
+SELECT nazwisko, placa FROM osoba;
+SELECT * FROM osoba WHERE placa = 5000;
+SELECT * FROM osoba WHERE placa >= 4500 AND placa <= 6500;
+SELECT * FROM osoba WHERE plec = 'K' AND rok_biezacy = 2026;
+SELECT * FROM osoba WHERE plec = 'M' AND rok_biezacy = 2026;
+SELECT * FROM osoba ORDER BY nazwisko;
+SELECT * FROM osoba ORDER BY placa DESC;
+SELECT DISTINCT plec FROM osoba;
+SELECT * FROM osoba LIMIT 10;
