@@ -66,3 +66,15 @@ SELECT * FROM osoba ORDER BY nazwisko;
 SELECT * FROM osoba ORDER BY placa DESC;
 SELECT DISTINCT plec FROM osoba;
 SELECT * FROM osoba LIMIT 10;
+
+Krystian:
+SELECT * FROM osoba;
+SELECT imie, nazwisko, cena FROM osoba WHERE cena > 500;
+SELECT nazwisko, plec, cena FROM osoba WHERE cena < 1000;
+SELECT imie, placa, cena FROM osoba WHERE imie LIKE 'M%';
+SELECT imie, rok_biezacy, cena FROM osoba WHERE cena BETWEEN 400 AND 800;
+SELECT nazwisko, placa, cena FROM osoba WHERE nazwisko LIKE '%ski' AND cena > 600;
+SELECT imie, nazwisko, cena FROM osoba WHERE plec = 'K' AND cena < 900;
+SELECT plec, rok_biezacy, cena FROM osoba WHERE cena >= 300;
+SELECT imie, nazwisko ORDER BY cena;
+SELECT imie, placa, cena ORDER BY cena DESC; 
