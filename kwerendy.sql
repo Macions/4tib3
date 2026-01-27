@@ -41,3 +41,16 @@ SELECT * FROM osoba WHERE placa <= 6000;
 SELECT * FROM osoba WHERE rok_biezacy = 2026;
 SELECT * FROM osoba ORDER BY placa;
 SELECT * FROM osoba ORDER BY imie DESC;
+
+
+Kiczul:
+SELECT * FROM osoba;
+SELECT imie FROM osoba;
+SELECT nazwisko FROM osoba;
+SELECT imie, nazwisko FROM osoba;
+SELECT * FROM osoba WHERE placa > 3000;
+SELECT * FROM osoba WHERE placa < 7000;
+SELECT * FROM osoba WHERE plec = 'K' AND placa > 4000;
+SELECT * FROM osoba WHERE plec = 'M' AND placa < 5000;
+SELECT DISTINCT rok_biezacy FROM osoba;
+SELECT * FROM osoba LIMIT 3;
