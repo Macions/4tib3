@@ -642,10 +642,15 @@ const person = {
 			color: "red",
 			length: "25cm",
 		},
-		favoriteFood: ["mięcho", "mięso", "mięso"],
+		favoriteFood: ["mięso1", "mięso2", "mięso3"],
 	},
+
+    show_info() {
+        document.querySelector(".jeden").innerHTML = person.name;
+        document.querySelector(".dwa").innerHTML = person.pet.name;
+        document.querySelector(".trzy").innerHTML = person.pet.collar.color;
+        document.querySelector(".cztery").innerHTML = person.pet.favoriteFood[1];
+    }
 };
-document.writeln("<br>" + person.name + "<br>");
-document.writeln("<br>" + person.pet.name + "<br>");
-document.writeln("<br>" + person.pet.collar.color + "<br>");
-document.writeln("<br>" + person.pet.favoriteFood[1] + "<br>");
+
+person.show_info();
