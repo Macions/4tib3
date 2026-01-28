@@ -632,24 +632,68 @@
 // const [name2, name3] = tab;
 // document.writeln("<br>" + name2 + " " + name3);
 
-const person = {
-	name: "Marcin",
-	pet: {
-		name: "Szama",
-		color: "brown",
-		speed: 1000,
-		collar: {
-			color: "red",
-			length: "25cm",
-		},
-		favoriteFood: ["mięso1", "mięso2", "mięso3"],
-	},
-	show_info() {
-		document.write(person.name + "<br>");
-		document.write(person.pet.name + "<br>");
-		document.write(person.pet.collar.color + "<br>");
-		document.write(person.pet.favoriteFood[1] + "<br>");
-	}
+// const person = {
+// 	name: "Marcin",
+// 	pet: {
+// 		name: "Szama",
+// 		color: "brown",
+// 		speed: 1000,
+// 		collar: {
+// 			color: "red",
+// 			length: "25cm",
+// 		},
+// 		favoriteFood: ["mięso1", "mięso2", "mięso3"],
+// 	},
+// 	show_info() {
+// 		document.write(person.name + "<br>");
+// 		document.write(person.pet.name + "<br>");
+// 		document.write(person.pet.collar.color + "<br>");
+// 		document.write(person.pet.favoriteFood[1] + "<br>");
+// 	}
+// };
+
+// person.show_info();
+
+// Stwórz obiekt szkola, w nim obiekty, metody,tablica, funkcje
+
+// let uczen = {
+//     imie: "Maciej",
+//     nazwisko: "DADS",
+//     wiek: 17
+// }
+// const szkola = {
+//     nazwa: "4TIB",
+//     adres: "ul. Blich 10, 99-413 Łowicz",
+//     uczniowie: [
+//         { imie: "Maciej", nazwisko: "Czarnecki", wiek: 17 },
+//         { imie: "Marcelina", nazwisko: "Cieślak", wiek: 18 }
+//     ],
+//     pokazUczniow() {
+//         this.uczniowie.forEach(uczen => {
+//             document.write(`Imię: ${uczen.imie}, Nazwisko: ${uczen.nazwisko}, Wiek: ${uczen.wiek} <br>`);
+//         });
+//     },
+//     dodajUcznia(uczenDoDodania){
+//         this.uczniowie.push(uczenDoDodania)
+//     }
+// };
+
+// szkola.dodajUcznia(uczen);
+// szkola.pokazUczniow();
+
+
+const szkola = {
+    nazwa: "ZSP nr 4",
+    adres: "Łowicz",
+
+    uczniowie: [
+        { imie: "fgh", wiek: 16 },
+        { imie: "erwty", wiek: 17 }
+    ],
+
+    pokazUczniow() {
+        console.log(this.uczniowie);
+    }
 };
 
-person.show_info();
+szkola.pokazUczniow();
