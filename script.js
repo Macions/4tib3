@@ -697,3 +697,25 @@
 // };
 
 // szkola.pokazUczniow();
+
+const szkola = {
+    nazwa: "ZSP 2 łowicz",
+    miasto: "Łowicz",
+
+    klasy: [
+        { nazwa: "4TIB", liczbaUczniow: 21 }
+    ],
+
+    pokazKlasy() {
+        document.write("Lista klas:");
+        for (let i = 0; i < this.klasy.length; i++) {
+            document.write(this.klasy[i].nazwa, " ", this.klasy[i].liczbaUczniow, "uczniów");
+        }
+    },
+
+    ileKlas() {
+        document.write(this.klasy.length);
+    }
+};
+
+szkola.pokazKlasy();
