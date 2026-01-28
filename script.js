@@ -699,23 +699,19 @@
 // szkola.pokazUczniow();
 
 const szkola = {
-    nazwa: "ZSP 2 łowicz",
-    miasto: "Łowicz",
+    nazwa: "ZSP 2 Łowicz",
+    rokZalozenia: 1925,
 
-    klasy: [
-        { nazwa: "4TIB", liczbaUczniow: 21 }
+    nauczyciele: [
+        { imie: "Grzegorz", przedmiot: "Polski" },
+        { imie: "Wioletta", przedmiot: "Matematyka" }
     ],
 
-    pokazKlasy() {
-        document.write("Lista klas:");
-        for (let i = 0; i < this.klasy.length; i++) {
-            document.write(this.klasy[i].nazwa, " ", this.klasy[i].liczbaUczniow, "uczniów");
+    pokazNauczycieli() {
+        for (let i = 0; i < this.nauczyciele.length; i++) {
+            console.log(`${this.nauczyciele[i].imie} uczy: ${this.nauczyciele[i].przedmiot}`);
         }
-    },
-
-    ileKlas() {
-        document.write(this.klasy.length);
     }
 };
 
-szkola.pokazKlasy();
+szkola.pokazNauczycieli();
