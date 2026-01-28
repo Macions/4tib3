@@ -682,18 +682,18 @@
 // szkola.pokazUczniow();
 
 
-const szkola = {
-    nazwa: "ZSP nr 4",
-    adres: "Łowicz",
+// const szkola = {
+//     nazwa: "ZSP nr 4",
+//     adres: "Łowicz",
 
-    uczniowie: [
-        { imie: "fgh", wiek: 16 },
-        { imie: "erwty", wiek: 17 }
-    ],
+//     uczniowie: [
+//         { imie: "fgh", wiek: 16 },
+//         { imie: "erwty", wiek: 17 }
+//     ],
 
-    pokazUczniow() {
-        console.log(this.uczniowie);
-    }
-};
+//     pokazUczniow() {
+//         console.log(this.uczniowie);
+//     }
+// };
 
-szkola.pokazUczniow();
+// szkola.pokazUczniow();
