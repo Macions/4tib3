@@ -616,14 +616,14 @@ const obj = {
 	surname: "Kowalski",
 	age: 10,
 };
-document.writeln("<br><b>Zamiast</b><br>");
+document.writeln("<br>**zamiast**<br>");
 const name = obj.name;
 const surname = obj["surname"];
 const age = obj.age;
 document.writeln(name + " " + surname + " " + age);
 
-document.writeln("<br><b>Można</b><br>");
-const {name1, surname1, age1} = obj;
+document.writeln("<br>**można**<br>");
+const { name1, surname1, age1 } = obj;
 
 const tab = ["Ala", "Ola", "Ela"];
 //const name1 = tab[0];
