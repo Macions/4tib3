@@ -611,23 +611,41 @@
 // calendar["2025-11-11"];
 // document.writeln(calendar["2025-11-11"]);
 
-const obj = {
+// const obj = {
+// 	name: "Marcin",
+// 	surname: "Kowalski",
+// 	age: 10,
+// };
+// document.writeln("<br><b>Zamiast</b><br>");
+// const name = obj.name;
+// const surname = obj["surname"];
+// const age = obj.age;
+// document.writeln(name + " " + surname + " " + age);
+
+// document.writeln("<br><b>Można</b><br>");
+// const {name1, surname1, age1} = obj;
+
+// const tab = ["Ala", "Ola", "Ela"];
+// //const name1 = tab[0];
+// //const name2 = tab[1];
+
+// const [name2, name3] = tab;
+// document.writeln("<br>" + name2 + " " + name3);
+
+const person = {
 	name: "Marcin",
-	surname: "Kowalski",
-	age: 10,
+	pet: {
+		name: "Szama",
+		color: "brown",
+		speed: 1000,
+		collar: {
+			color: "red",
+			length: "25cm",
+		},
+		favoriteFood: ["mięcho", "mięso", "mięso"],
+	},
 };
-document.writeln("<br>**zamiast**<br>");
-const name = obj.name;
-const surname = obj["surname"];
-const age = obj.age;
-document.writeln(name + " " + surname + " " + age);
-
-document.writeln("<br>**można**<br>");
-const { name1, surname1, age1 } = obj;
-
-const tab = ["Ala", "Ola", "Ela"];
-//const name1 = tab[0];
-//const name2 = tab[1];
-
-const [name2, name3] = tab;
-document.writeln("<br>" + name1 + " " + name2);
+document.writeln("<br>" + person.name + "<br>");
+document.writeln("<br>" + person.pet.name + "<br>");
+document.writeln("<br>" + person.pet.collar.color + "<br>");
+document.writeln("<br>" + person.pet.favoriteFood[1] + "<br>");
