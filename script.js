@@ -644,13 +644,12 @@ const person = {
 		},
 		favoriteFood: ["mięso1", "mięso2", "mięso3"],
 	},
-
-    show_info() {
-        document.querySelector(".jeden").innerHTML = person.name;
-        document.querySelector(".dwa").innerHTML = person.pet.name;
-        document.querySelector(".trzy").innerHTML = person.pet.collar.color;
-        document.querySelector(".cztery").innerHTML = person.pet.favoriteFood[1];
-    }
+	show_info() {
+		document.write(person.name + "<br>");
+		document.write(person.pet.name + "<br>");
+		document.write(person.pet.collar.color + "<br>");
+		document.write(person.pet.favoriteFood[1] + "<br>");
+	}
 };
 
 person.show_info();
