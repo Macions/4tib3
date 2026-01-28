@@ -656,62 +656,39 @@
 
 // Stwórz obiekt szkola, w nim obiekty, metody,tablica, funkcje
 
-// let uczen = {
-//     imie: "Maciej",
-//     nazwisko: "DADS",
-//     wiek: 17
-// }
-// const szkola = {
-//     nazwa: "4TIB",
-//     adres: "ul. Blich 10, 99-413 Łowicz",
-//     uczniowie: [
-//         { imie: "Maciej", nazwisko: "Czarnecki", wiek: 17 },
-//         { imie: "Marcelina", nazwisko: "Cieślak", wiek: 18 }
-//     ],
-//     pokazUczniow() {
-//         this.uczniowie.forEach(uczen => {
-//             document.write(`Imię: ${uczen.imie}, Nazwisko: ${uczen.nazwisko}, Wiek: ${uczen.wiek} <br>`);
-//         });
-//     },
-//     dodajUcznia(uczenDoDodania){
-//         this.uczniowie.push(uczenDoDodania)
-//     }
-// };
-
-// szkola.dodajUcznia(uczen);
-// szkola.pokazUczniow();
-
-
-// const szkola = {
-//     nazwa: "ZSP nr 4",
-//     adres: "Łowicz",
-
-//     uczniowie: [
-//         { imie: "fgh", wiek: 16 },
-//         { imie: "erwty", wiek: 17 }
-//     ],
-
-//     pokazUczniow() {
-//         console.log(this.uczniowie);
-//     }
-// };
-
-// szkola.pokazUczniow();
-
+let uczen = {
+    imie: "Maciej",
+    nazwisko: "DADS",
+    wiek: 17
+}
 const szkola = {
-    nazwa: "ZSP 2 Łowicz",
-    rokZalozenia: 1925,
-
-    nauczyciele: [
-        { imie: "Grzegorz", przedmiot: "Polski" },
-        { imie: "Wioletta", przedmiot: "Matematyka" }
+    nazwa: "4TIB",
+    adres: "ul. Blich 10, 99-413 Łowicz",
+    uczniowie: [
+        { imie: "Maciej", nazwisko: "Czarnecki", wiek: 17 },
+        { imie: "Marcelina", nazwisko: "Cieślak", wiek: 18 }
     ],
+    pokazUczniow() {
+        this.uczniowie.forEach(uczen => {
+            document.write(`Imię: ${uczen.imie}, Nazwisko: ${uczen.nazwisko}, Wiek: ${uczen.wiek} <br>`);
+        });
+    },
+    dodajUcznia(uczenDoDodania){
+        this.uczniowie.push(uczenDoDodania)
+    },
 
-    pokazNauczycieli() {
-        for (let i = 0; i < this.nauczyciele.length; i++) {
-            console.log(`${this.nauczyciele[i].imie} uczy: ${this.nauczyciele[i].przedmiot}`);
-        }
+    samochody: [
+        {marka: "Marka1", kolor: "Biały"},
+        {marka: "Marka2", kolor: "Czarny"}
+    ],
+    pokazSamochody(){
+        this.samochody.forEach(samochod =>{
+            document.write(`Marka: ${samochod.marka}, Kolor: ${samochod.kolor} <br>`)
+        })
     }
 };
 
-szkola.pokazNauczycieli();
+szkola.dodajUcznia(uczen);
+szkola.pokazUczniow();
+document.write("<br>")
+szkola.pokazSamochody()
