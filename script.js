@@ -735,20 +735,25 @@
 // let x = this;
 // document.getElementById("demo").innerHTML = "To jest " + x;
 
-const person = {
-    name: "John",
-    age: 30,
-    city: "New York"
-};
+// const person = {
+//     name: "John",
+//     age: 30,
+//     city: "New York"
+// };
 
-let text = person.name + ", " + person.age + ", " + person.city;
+// let text = person.name + ", " + person.age + ", " + person.city;
 
-document.getElementById("demo").innerHTML = text;
+// document.getElementById("demo").innerHTML = text;
 
-let text2 = "";
-for(let x in person){
-    text2 += person[x] + " ";
-}
+// let text2 = "";
+// for(let x in person){
+//     text2 += person[x] + " ";
+// }
 
 
-document.getElementById("demo2").innerHTML = text2;
+// document.getElementById("demo2").innerHTML = text2;
+
+const obj = {a: 1, b: 2, c: 3};
+console.log(Object.keys(obj));
+console.log(Object.values(obj));
+console.log(Object.entries(obj));
