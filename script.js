@@ -705,15 +705,47 @@
 // let result2 = ("adres" in person);
 // document.getElementById("demoF").innerHTML = result2;
 
-const person = {
-	firstName: "John",
-	lastName: "Doe",
-	id: 5566,
-	getId: function () {
-		this
-		return this.id;
-	},
-};
+// const person = {
+// 	firstName: "John",
+// 	lastName: "Doe",
+// 	id: 5566,
+// 	getId: function () {
+// 		this
+// 		return this.id;
+// 	},
+// };
 
-let number = person.getId();
-document.getElementById("demo").innerHTML = `Liczba to: ${number}`;
+// let number = person.getId();
+// document.getElementById("demo").innerHTML = `Liczba to: ${number}`;
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            getId: function () {
+                this
+                return this.id;
+            },
+        };
+
+        let number = person.getId();
+        document.getElementById("demo").innerHTML = `Liczba to: ${number}`;
+
+    </script>
+</body>
+
+</html>
