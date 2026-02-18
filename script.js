@@ -720,14 +720,17 @@
 
 
 
-const person = {
-    firstName: "John",
-    lastName: "Doe",
-    id: 5566
-}
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     id: 5566
+// }
 
-person.name = function(){
-    return (this.firstName + " " + this.lastName).toUpperCase();
-};
+// person.name = function(){
+//     return (this.firstName + " " + this.lastName).toUpperCase();
+// };
 
-document.getElementById("demo").innerHTML = "Mój tata to: " + person.name();
+// document.getElementById("demo").innerHTML = "Mój tata to: " + person.name();
+
+let x = this;
+document.getElementById("demo").innerHTML = "To jest " + x;
