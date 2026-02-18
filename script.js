@@ -727,7 +727,7 @@ const person = {
 }
 
 person.name = function(){
-    return this.firstName + " " + this.lastName;
+    return (this.firstName + " " + this.lastName).toUpperCase();
 };
 
 document.getElementById("demo").innerHTML = "Mój tata to: " + person.name();
