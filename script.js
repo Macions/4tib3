@@ -720,32 +720,14 @@
 
 
 
-<!DOCTYPE html>
-<html lang="pl">
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    id: 5566
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+person.name = function(){
+    return this.firstName + " " + this.lastName;
+};
 
-<body>
-    <p id="demo"></p>
-    <script>
-        const person = {
-            firstName: "John",
-            lastName: "Doe",
-            id: 5566,
-            getId: function () {
-                this
-                return this.id;
-            },
-        };
-
-        let number = person.getId();
-        document.getElementById("demo").innerHTML = `Liczba to: ${number}`;
-
-    </script>
-</body>
-
-</html>
+document.getElementById("demo").innerHTML = "Mój tata to: " + person.name();
