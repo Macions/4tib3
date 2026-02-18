@@ -732,5 +732,23 @@
 
 // document.getElementById("demo").innerHTML = "Mój tata to: " + person.name();
 
-let x = this;
-document.getElementById("demo").innerHTML = "To jest " + x;
+// let x = this;
+// document.getElementById("demo").innerHTML = "To jest " + x;
+
+const person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+let text = person.name + ", " + person.age + ", " + person.city;
+
+document.getElementById("demo").innerHTML = text;
+
+let text2 = "";
+for(let x in person){
+    text2 += person[x] + " ";
+}
+
+
+document.getElementById("demo2").innerHTML = text2;
