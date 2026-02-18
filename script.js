@@ -718,8 +718,6 @@
 // let number = person.getId();
 // document.getElementById("demo").innerHTML = `Liczba to: ${number}`;
 
-
-
 // const person = {
 //     firstName: "John",
 //     lastName: "Doe",
@@ -750,10 +748,19 @@
 //     text2 += person[x] + " ";
 // }
 
-
 // document.getElementById("demo2").innerHTML = text2;
 
-const obj = {a: 1, b: 2, c: 3};
+const obj = { a: 1, b: 2, c: 3 };
 console.log(Object.keys(obj));
 console.log(Object.values(obj));
 console.log(Object.entries(obj));
+
+const dane1 = { x: 10, y: 20, z: 30 };
+Object.entries(dane1)
+	.filter(([klucz, wartosc]) => wartosc > 15)
+	.forEach(([klucz, wartosc]) => console.log(`${klucz}: ${wartosc}`));
+
+
+const dane = {a:1, b:2, c:3}
+const mapa = new Map(Object.entries(dane))
+console.log(mapa.get("a"))
