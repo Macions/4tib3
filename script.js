@@ -656,39 +656,64 @@
 
 // Stwórz obiekt szkola, w nim obiekty, metody,tablica, funkcje
 
-let uczen = {
-    imie: "Maciej",
-    nazwisko: "DADS",
-    wiek: 17
-}
-const szkola = {
-    nazwa: "4TIB",
-    adres: "ul. Blich 10, 99-413 Łowicz",
-    uczniowie: [
-        { imie: "Maciej", nazwisko: "Czarnecki", wiek: 17 },
-        { imie: "Marcelina", nazwisko: "Cieślak", wiek: 18 }
-    ],
-    pokazUczniow() {
-        this.uczniowie.forEach(uczen => {
-            document.write(`Imię: ${uczen.imie}, Nazwisko: ${uczen.nazwisko}, Wiek: ${uczen.wiek} <br>`);
-        });
-    },
-    dodajUcznia(uczenDoDodania){
-        this.uczniowie.push(uczenDoDodania)
-    },
+// let uczen = {
+//     imie: "Maciej",
+//     nazwisko: "DADS",
+//     wiek: 17
+// }
+// const szkola = {
+//     nazwa: "4TIB",
+//     adres: "ul. Blich 10, 99-413 Łowicz",
+//     uczniowie: [
+//         { imie: "Maciej", nazwisko: "Czarnecki", wiek: 17 },
+//         { imie: "Marcelina", nazwisko: "Cieślak", wiek: 18 }
+//     ],
+//     pokazUczniow() {
+//         this.uczniowie.forEach(uczen => {
+//             document.write(`Imię: ${uczen.imie}, Nazwisko: ${uczen.nazwisko}, Wiek: ${uczen.wiek} <br>`);
+//         });
+//     },
+//     dodajUcznia(uczenDoDodania){
+//         this.uczniowie.push(uczenDoDodania)
+//     },
 
-    samochody: [
-        {marka: "Marka1", kolor: "Biały"},
-        {marka: "Marka2", kolor: "Czarny"}
-    ],
-    pokazSamochody(){
-        this.samochody.forEach(samochod =>{
-            document.write(`Marka: ${samochod.marka}, Kolor: ${samochod.kolor} <br>`)
-        })
-    }
+//     samochody: [
+//         {marka: "Marka1", kolor: "Biały"},
+//         {marka: "Marka2", kolor: "Czarny"}
+//     ],
+//     pokazSamochody(){
+//         this.samochody.forEach(samochod =>{
+//             document.write(`Marka: ${samochod.marka}, Kolor: ${samochod.kolor} <br>`)
+//         })
+//     }
+// };
+
+// szkola.dodajUcznia(uczen);
+// szkola.pokazUczniow();
+// document.write("<br>")
+// szkola.pokazSamochody()
+
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     age: 22
+// };
+
+// let result = ("firstName" in person);
+// document.getElementById("demo").innerHTML = result;
+
+// let result2 = ("adres" in person);
+// document.getElementById("demoF").innerHTML = result2;
+
+const person = {
+	firstName: "John",
+	lastName: "Doe",
+	id: 5566,
+	getId: function () {
+		this
+		return this.id;
+	},
 };
 
-szkola.dodajUcznia(uczen);
-szkola.pokazUczniow();
-document.write("<br>")
-szkola.pokazSamochody()
+let number = person.getId();
+document.getElementById("demo").innerHTML = `Liczba to: ${number}`;
