@@ -814,3 +814,4 @@ Object.entries(osoba2)
 	.forEach(([klucz, wartosc]) => {
 		document.getElementById("wynik4").innerHTML += `${klucz}: ${wartosc} <br>`;
 	});
+	
