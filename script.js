@@ -793,12 +793,6 @@ delete osoba.wiek;
 document.getElementById("wynik2").innerHTML =
 	`Imię: ${osoba["imie"]}, Nazwisko: ${osoba["nazwisko"]}, Kolor oczu: ${osoba["kolorOczu"]}`;
 
-	// zadanie 3
-
-	// stwor obiekt liczby, w środku nazwy do tych liczb to l1, l2, l3, l4, l5 i do nich wypisac wartosci 5,10,15,20,25
-// wyswietlicz klucz (przez Object.keys), wartosc (przez Object.values), wartosc i klucz (przez Object.entries i forEach) bez join
-
-
 const liczby = {
 	l1: 5,
 	l2: 10,
@@ -808,4 +802,15 @@ const liczby = {
 };
 
 document.getElementById("wynik3").innerHTML =
-	`Klucze: ${Object.keys(liczby).join(", ")} <br> Wartości: ${Object.values(liczby).join(", ")}`;
+	`Klucze: ${Object.keys(liczby)} <br> Wartości: ${Object.values(liczby)} <br> Wartości i klucze: ${Object.entries(liczby)}`;
+
+const osoba2 = {
+	imie: "Anna",
+	nazwisko: "Nowak",
+	kolorOczu: "piwne",
+};
+Object.entries(osoba2)
+	.filter(([klucz, wartosc]) => typeof wartosc === "string")
+	.forEach(([klucz, wartosc]) => {
+		document.getElementById("wynik4").innerHTML += `${klucz}: ${wartosc} <br>`;
+	});
