@@ -750,17 +750,62 @@
 
 // document.getElementById("demo2").innerHTML = text2;
 
-const obj = { a: 1, b: 2, c: 3 };
-console.log(Object.keys(obj));
-console.log(Object.values(obj));
-console.log(Object.entries(obj));
+// const obj = { a: 1, b: 2, c: 3 };
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+// console.log(Object.entries(obj));
 
-const dane1 = { x: 10, y: 20, z: 30 };
-Object.entries(dane1)
-	.filter(([klucz, wartosc]) => wartosc > 15)
-	.forEach(([klucz, wartosc]) => console.log(`${klucz}: ${wartosc}`));
+// const dane1 = { x: 10, y: 20, z: 30 };
+// Object.entries(dane1)
+// 	.filter(([klucz, wartosc]) => wartosc > 15)
+// 	.forEach(([klucz, wartosc]) => console.log(`${klucz}: ${wartosc}`));
+
+// const dane = {a:1, b:2, c:3}
+// const mapa = new Map(Object.entries(dane))
+// console.log(mapa.get("a"))
+
+// odniesienie do pierwsszego zadania
+// dodać właściwość jako dodatkową
+// i usunąć ją
+
+// 2 zadanie
+// wyswietlić przez nawias kwadratowy
+
+// 3 zadanie
+// stwor obiekt liczby, w środku nazwy do tych liczb to l1, l2, l3, l4, l5 i do nich wypisac wartosci 5,10,15,20,25
+// wyswietlicz klucz, wartosc, wartosc i klucz
+
+// 4 zadanie
+// zrób obiekt osoba, w środku imie nazwisko wiek, wyswietl klucz i wartosc z filtrem gdzie wartosc będzie stringiem i przez foreach wyswietlic
+
+const osoba = {
+	imie: "Jan",
+	nazwisko: "Kowalski",
+	kolorOczu: "niebieskie",
+};
+
+document.getElementById("wynik1").innerHTML =
+	`Imię: ${osoba.imie}, Nazwisko: ${osoba.nazwisko}, Kolor oczu: ${osoba.kolorOczu}`;
+
+osoba.wiek = 30;
+delete osoba.wiek;
+
+document.getElementById("wynik2").innerHTML =
+	`Imię: ${osoba["imie"]}, Nazwisko: ${osoba["nazwisko"]}, Kolor oczu: ${osoba["kolorOczu"]}`;
+
+	// zadanie 3
+
+	// stwor obiekt liczby, w środku nazwy do tych liczb to l1, l2, l3, l4, l5 i do nich wypisac wartosci 5,10,15,20,25
+// wyswietlicz klucz (przez Object.keys), wartosc (przez Object.values), wartosc i klucz (przez Object.entries i forEach) bez join
 
 
-const dane = {a:1, b:2, c:3}
-const mapa = new Map(Object.entries(dane))
-console.log(mapa.get("a"))
+const liczby = {
+	l1: 5,
+	l2: 10,
+	l3: 15,
+	l4: 20,
+	l5: 25,
+};
+
+document.getElementById("wynik3").innerHTML =
+	`Klucze: ${Object.keys(liczby).join(", ")} <br> Wartości: ${Object.values(liczby).join(", ")}`;
