@@ -778,39 +778,179 @@
 // 4 zadanie
 // zrób obiekt osoba, w środku imie nazwisko wiek, wyswietl klucz i wartosc z filtrem gdzie wartosc będzie stringiem i przez foreach wyswietlic
 
-const osoba = {
-	imie: "Jan",
-	nazwisko: "Kowalski",
-	kolorOczu: "niebieskie",
-};
+// const osoba = {
+// 	imie: "Jan",
+// 	nazwisko: "Kowalski",
+// 	kolorOczu: "niebieskie",
+// };
 
-document.getElementById("wynik1").innerHTML =
-	`Imię: ${osoba.imie}, Nazwisko: ${osoba.nazwisko}, Kolor oczu: ${osoba.kolorOczu}`;
+// document.getElementById("wynik1").innerHTML =
+// 	`Imię: ${osoba.imie}, Nazwisko: ${osoba.nazwisko}, Kolor oczu: ${osoba.kolorOczu}`;
 
-osoba.wiek = 30;
-delete osoba.wiek;
+// osoba.wiek = 30;
+// delete osoba.wiek;
 
-document.getElementById("wynik2").innerHTML =
-	`Imię: ${osoba["imie"]}, Nazwisko: ${osoba["nazwisko"]}, Kolor oczu: ${osoba["kolorOczu"]}`;
+// document.getElementById("wynik2").innerHTML =
+// 	`Imię: ${osoba["imie"]}, Nazwisko: ${osoba["nazwisko"]}, Kolor oczu: ${osoba["kolorOczu"]}`;
 
-const liczby = {
-	l1: 5,
-	l2: 10,
-	l3: 15,
-	l4: 20,
-	l5: 25,
-};
+// const liczby = {
+// 	l1: 5,
+// 	l2: 10,
+// 	l3: 15,
+// 	l4: 20,
+// 	l5: 25,
+// };
 
-document.getElementById("wynik3").innerHTML =
-	`Klucze: ${Object.keys(liczby)} <br> Wartości: ${Object.values(liczby)} <br> Wartości i klucze: ${Object.entries(liczby)}`;
+// document.getElementById("wynik3").innerHTML =
+// 	`Klucze: ${Object.keys(liczby)} <br> Wartości: ${Object.values(liczby)} <br> Wartości i klucze: ${Object.entries(liczby)}`;
 
-const osoba2 = {
-	imie: "Anna",
-	nazwisko: "Nowak",
-	kolorOczu: "piwne",
-};
-Object.entries(osoba2)
-	.filter(([klucz, wartosc]) => typeof wartosc === "string")
-	.forEach(([klucz, wartosc]) => {
-		document.getElementById("wynik4").innerHTML += `${klucz}: ${wartosc} <br>`;
-	});
+// const osoba2 = {
+// 	imie: "Anna",
+// 	nazwisko: "Nowak",
+// 	kolorOczu: "piwne",
+// };
+// Object.entries(osoba2)
+// 	.filter(([klucz, wartosc]) => typeof wartosc === "string")
+// 	.forEach(([klucz, wartosc]) => {
+// 		document.getElementById("wynik4").innerHTML += `${klucz}: ${wartosc} <br>`;
+// 	});
+
+// function Person(first, last, age, eye) {
+// 	this.firstName = first;
+// 	this.lastName = last;
+// 	this.age = age;
+// 	this.eyeColor = eye;
+// 	this.nationality = "English";
+// }
+
+// const myFather = new Person("John", "Doe", 30, "blue");
+// const myMother = new Person("Sally", "Rally", 48, "green");
+// document.getElementById("demo").innerHTML =
+// 	`My father is ${myFather.nationality}. My mother is ${myMother.nationality}.`;
+// 	myFather.nationality = "English";
+// document.getElementById("demo1").innerHTML =
+// 	`My mother is ${myMother.nationality}.`;
+
+// function Person(first, last, age, eye) {
+// 	this.firstName = first;
+// 	this.lastName = last;
+// 	this.age = age;
+// 	this.eyeColor = eye;
+// 	this.fullName = function () {
+// 		return this.firstName + " " + this.lastName;
+// 	};
+// }
+// const myFather = new Person("John", "Doe", 50, "blue");
+
+// document.getElementById("demo").innerHTML =
+// 	`My father is ${myFather.fullName()}.`;
+
+// function Person(first, last, age, eye) {
+// 	this.firstName = first;
+// 	this.lastName = last;
+// 	this.age = age;
+// 	this.eyeColor = eye;
+// }
+
+// const myFather = new Person("John", "Doe", 50, "blue");
+// const myMother = new Person("Sally", "Rally", 48, "green");
+
+// myMother.changeName = function (name) {
+// 	this.lastName = name;
+// };
+
+// myMother.changeName("Doe");
+// document.getElementById("demo").innerHTML =
+// 	`My mother's last name is ${myMother.lastName}.`;
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   language: "EN"
+// };
+// const man = Object.create(person);
+// man.firstName = "Peter";
+
+// document.getElementById("demo").innerHTML = `${person.firstName} and ${man.firstName}`;
+
+// const fruits = [
+// 	{name: "apples", ilosc: 300},
+// 	{name: "bananas", ilosc: 500},
+// 	{name: "oranges", ilosc: 200},
+// 	{name: "kiwi", ilosc: 150}
+// ]
+
+// function myCallback({ilosc}){
+// 	return ilosc > 200 ? "ok": "low";
+// }
+
+// const result = Object.groupBy(fruits, myCallback);
+
+// let text = "These fruits are Ok: <br>";
+// for (const [x, y] of result.ok.entries()) {
+// 	text += `${y.name}  ${y.ilosc} <br>`;
+// }
+
+// text+=`<br>These fruits are low: <br>`;
+// for (const [x, y] of result.low.entries()) {
+// 	text += `${y.name}  ${y.ilosc} <br>`;
+// }
+
+// const uzytkownik = {
+// 	imie: "Anna",
+// 	nazwisko: "Kowalska",
+// 	wiek: 25,
+// 	miasto: "Warszawa",
+// 	hobby:["czytanie", "programowanie"]
+// }
+
+// document.getElementById("demo").innerHTML = Object.keys(uzytkownik);
+// document.getElementById("demo1").innerHTML = Object.values(uzytkownik);
+// document.getElementById("demo2").innerHTML = Object.entries(uzytkownik);
+
+// const osoba = {
+// 	imie: "Jan",
+// 	nazwisko: "Nowak",
+// 	wiek: 30,
+// 	miasto: "Kraków",
+// 	wzrost: 180,
+// 	email: "jan.nowak@email.com",
+// 	aktywny: true,
+// };
+
+// Object.entries(osoba)
+// 	.filter(([k, v]) => typeof v === "string")
+// 	.forEach(([k, v]) => console.log(k, v));
+
+// let html = "<h4>Właściwości znakowe string:</h4>";
+// Object.entries(osoba)
+// 	.filter(([k, v]) => typeof v === "string")
+// 	.forEach(([k, v]) => (html += `${k}: ${v} <br>`));
+
+// document.getElementById("demo").innerHTML = html;
+
+function Produkt(nazwa, cena, kategoria) {
+	this.nazwa = nazwa;
+	this.cena = cena;
+	this.kategoria = kategoria;
+	this.pobierzInfo = function () {
+		return `Nazwa: ${this.nazwa}, Cena: ${this.cena}, Kategoria: ${this.kategoria}`;
+	};
+}
+
+const produkty = [
+	new Produkt("Laptop Dell", 4500, "Elektronika"),
+	new Produkt("Telefon iPhone", 4200, "Elektronika"),
+	new Produkt("Buty Adidas", 500, "Sport"),
+	new Produkt("Kubek termiczny", 80, "Dom"),
+]
+
+const lista = document.getElementById("lista");
+let html = '';
+
+produkty.forEach(function (produkt) {
+	html += `<p>${produkt.pobierzInfo()}</p>`;
+});
+lista.innerHTML = html;
+
+document.getElementById("demo").textContent = `Moje produkty(${produkty.length}):`;
