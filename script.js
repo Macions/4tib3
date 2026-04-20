@@ -929,28 +929,97 @@
 
 // document.getElementById("demo").innerHTML = html;
 
-function Produkt(nazwa, cena, kategoria) {
-	this.nazwa = nazwa;
-	this.cena = cena;
-	this.kategoria = kategoria;
-	this.pobierzInfo = function () {
-		return `Nazwa: ${this.nazwa}, Cena: ${this.cena}, Kategoria: ${this.kategoria}`;
-	};
-}
+// function Produkt(nazwa, cena, kategoria) {
+// 	this.nazwa = nazwa;
+// 	this.cena = cena;
+// 	this.kategoria = kategoria;
+// 	this.pobierzInfo = function () {
+// 		return `Nazwa: ${this.nazwa}, Cena: ${this.cena}, Kategoria: ${this.kategoria}`;
+// 	};
+// }
 
-const produkty = [
-	new Produkt("Laptop Dell", 4500, "Elektronika"),
-	new Produkt("Telefon iPhone", 4200, "Elektronika"),
-	new Produkt("Buty Adidas", 500, "Sport"),
-	new Produkt("Kubek termiczny", 80, "Dom"),
-]
+// const produkty = [
+// 	new Produkt("Laptop Dell", 4500, "Elektronika"),
+// 	new Produkt("Telefon iPhone", 4200, "Elektronika"),
+// 	new Produkt("Buty Adidas", 500, "Sport"),
+// 	new Produkt("Kubek termiczny", 80, "Dom"),
+// ]
 
-const lista = document.getElementById("lista");
-let html = '';
+// const lista = document.getElementById("lista");
+// let html = '';
 
-produkty.forEach(function (produkt) {
-	html += `<p>${produkt.pobierzInfo()}</p>`;
+// produkty.forEach(function (produkt) {
+// 	html += `<p>${produkt.pobierzInfo()}</p>`;
+// });
+// lista.innerHTML = html;
+
+// document.getElementById("demo").textContent = `Moje produkty(${produkty.length}):`;
+
+const zarowka = document.getElementById("myImageWla");
+
+// const turnOn = document
+// 	.getElementById("turnOn")
+// 	.addEventListener("click", () => {
+// 		zarowka.src = "zarowkawla.png";
+// 		document.getElementById("container").classList.add("light");
+// 	});
+
+// const turnOff = document
+// 	.getElementById("turnOff")
+// 	.addEventListener("click", () => {
+// 		zarowka.src = "zarowkawyl.png";
+// 		document.getElementById("container").classList.remove("light");
+// 	});
+
+// const toggle = document
+// 	.getElementById("rangeOfLight")
+// 	.addEventListener("input", (event) => {
+// 		const value = event.target.value;
+// 		zarowka.style.opacity = value / 100;
+// 		if (value / 100 == 1) {
+// 			// document.getElementById("container").classList.add("light");
+// 		} else if (value / 100 == 0) {
+// 			zarowka.src="zarowkawyl.png";
+// 			document.getElementById("container").classList.remove("light");
+// 			document.getElementById("myImageWla").style.opacity = 0;
+// 		} else {
+// 			zarowka.src="zarowkawla.png";
+// 			document.getElementById("container").classList.remove("light");
+// 		}
+// 	});
+
+// function funkcja() {
+// 	console.log(this.imie.value)
+// }
+
+// function koloruj(x){
+// 	if(koloruj == 1){
+// 		document.body.style.color = "blue"
+// 	} else if(koloruj == 2){
+// 		document.body.style.color = "red"
+// 	}
+// }
+
+// function koloruj(x){
+// 	document.body.style.backgroundColor = x;
+// }
+let sekcjaKot = document.querySelector(".opis.kot");
+let sekcjaPapuga = document.querySelector(".opis.papuga");
+let sekcjaZyrafa = document.querySelector(".opis.zyrafa");
+document.querySelector(".zyrafaZdj").addEventListener("click", () => {
+	sekcjaZyrafa.style.display = "block";
+	sekcjaKot.style.display = "none";
+	sekcjaPapuga.style.display = "none";
 });
-lista.innerHTML = html;
 
-document.getElementById("demo").textContent = `Moje produkty(${produkty.length}):`;
+document.querySelector(".papugaZdj").addEventListener("click", () => {
+	sekcjaPapuga.style.display = "block";
+	sekcjaKot.style.display = "none";
+	sekcjaZyrafa.style.display = "none";
+});
+
+document.querySelector(".kotZdj").addEventListener("click", () => {
+	sekcjaKot.style.display = "block";
+	sekcjaPapuga.style.display = "none";
+	sekcjaZyrafa.style.display = "none";
+});
