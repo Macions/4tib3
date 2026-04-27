@@ -24,15 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
 			document.getElementById("pole2").innerHTML =
 				`Kliknięto obrazek nr ${numerObrazka} ${iloscrazyklikniecia}`;
 		});
+
 		obrazek.addEventListener("mouseover", () => {
 			obrazek.style.border = "2px solid red";
 		});
+
 		obrazek.addEventListener("mouseout", () => {
 			obrazek.style.border = "none";
 		});
+
 		obrazek.addEventListener("mousedown", () => {
 			obrazek.style.border = "10px solid green";
 		});
+        
 		obrazek.addEventListener("mouseup", () => {
 			obrazek.style.border = "none";
 		});
