@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprawdzian</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section id="obrazki">
+            <img class="obrazek" numer="1"
+                src="https://tse2.mm.bing.net/th/id/OIP.Z-YzhUflwZzBwinUSsS2pQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+            <img class="obrazek" numer="2"
+                src="https://tse2.mm.bing.net/th/id/OIP.Z-YzhUflwZzBwinUSsS2pQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+            <img class="obrazek" numer="3"
+                src="https://tse2.mm.bing.net/th/id/OIP.Z-YzhUflwZzBwinUSsS2pQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        </section>
+        <form id="formularz">
+            <label for="imiePsa">Imię psa:</label>
+            <input type="text" name="imiePsa" id="imie" required>
+
+            <label for="kolorSiersci">Kolor sierści:</label>
+            <input type="text" name="kolorSiersci" id="siersc" required>
+
+            <label for="wiekPsa">Wiek psa:</label>
+            <input type="number" name="wiekPsa" id="wiek" min="1" max="100" required>
+
+            <button type="submit">Wyślij</button>
+        </form>
+
+        <section id="result">
+            <p id="pole1"></p>
+            <p id="pole2"></p>
+            <p id="pole3"></p>
+        </section>
+    </main>
+</body>
+
+</html>
